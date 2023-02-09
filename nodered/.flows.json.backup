@@ -1,0 +1,120 @@
+[
+    {
+        "id": "2f389b627abce8fd",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "50eba6fac0d3c0ca",
+        "type": "mqtt-broker",
+        "name": "MQTT",
+        "broker": "mqtt",
+        "port": "1884",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "08538bbf14330fe1",
+        "type": "inject",
+        "z": "2f389b627abce8fd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 270,
+        "y": 260,
+        "wires": [
+            [
+                "b32782ab60ee55d5"
+            ]
+        ]
+    },
+    {
+        "id": "b32782ab60ee55d5",
+        "type": "function",
+        "z": "2f389b627abce8fd",
+        "name": "Simulate Human Body",
+        "func": "var heartRate = Math.floor(Math.random() * (100 - 60 + 1) + 60);\nvar bloodPressure = Math.floor(Math.random() * (140 - 90 + 1) + 90);\nvar bodyTemperature = Math.random() * 1 + 36;\nvar glycemia = Math.floor(Math.random() * (200 - 70 + 1) + 70);\n\nmsg.payload = JSON.stringify({\n    \"heartRate\": heartRate,\n    \"bloodPressure\": bloodPressure,\n    \"bodyTemperature\": bodyTemperature,\n    \"glycemia\": glycemia\n});\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 260,
+        "wires": [
+            [
+                "a76dbd37013312c1",
+                "4859d8483ff6743b"
+            ]
+        ]
+    },
+    {
+        "id": "a76dbd37013312c1",
+        "type": "mqtt out",
+        "z": "2f389b627abce8fd",
+        "name": "mqtt",
+        "topic": "sensors",
+        "qos": "2",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "50eba6fac0d3c0ca",
+        "x": 690,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "4859d8483ff6743b",
+        "type": "debug",
+        "z": "2f389b627abce8fd",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 340,
+        "wires": []
+    }
+]

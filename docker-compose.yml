@@ -1,0 +1,77 @@
+version: '3.3'
+services:
+  telegraf:
+    image: telegraf
+    container_name: telegraf-collector
+    restart: always
+    volumes:
+      - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro
+    depends_on:
+      - influxdb
+
+  influxdb:
+    image: influxdb:latest
+    container_name: influxdb2
+    restart: always
+    ports:
+      - "8086:8086"
+    volumes:
+      - ./influxdb/volumes/influxdb2/data:/var/lib/influxdb2
+      - ./influxdb/volumes/influxdb2/config:/etc/influxdb2
+      - ./influxdb/volumes/influxdb2/backup:/var/lib/backup
+    environment:
+      - DOCKER_INFLUXDB_INIT_MODE=setup
+      - DOCKER_INFLUXDB_INIT_USERNAME=admin
+      - DOCKER_INFLUXDB_INIT_PASSWORD=adminpass
+      - DOCKER_INFLUXDB_INIT_ORG=univaq
+      - DOCKER_INFLUXDB_INIT_BUCKET=human_activity
+      - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=my-super-secret-auth-token
+      - DOCKER_INFLUXDB_INIT_ADMIN_USER=admin
+      - DOCKER_INFLUXDB_INIT_ADMIN_PASSWORD=adminpass
+      - DOCKER_INFLUXDB_HTTP_AUTH_ENABLED=true
+      - DOCKER_INFLUXDB_HTTP_LOG_ENABLED=true
+      - DOCKER_INFLUXDB_HTTP_WRITE_TRACING=false
+      - DOCKER_INFLUXDB_INIT_NO_OVERRIDE=true
+
+  nodered:
+    image: nodered/node-red:latest
+    container_name: noderd
+    restart: always
+    build:
+      context: ./nodered
+      dockerfile: Dockerfile
+    ports:
+      - "1880:1880"
+    volumes:
+      - ./nodered:/data
+      #- ./settings.js:/data/settings.js
+    depends_on:
+      - influxdb
+      - mqtt
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana-dashboard
+    restart: always
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./grafana/grafana-storage:/var/lib/grafana
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=adminpass
+    depends_on:
+      - influxdb
+
+  mqtt:
+    image: eclipse-mosquitto:latest
+    container_name: mqtt
+    restart: always
+    ports:
+      - "1884:1884"
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
+    depends_on:
+      - influxdb
