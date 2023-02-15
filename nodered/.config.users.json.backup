@@ -19,9 +19,9 @@
         "debug": {
             "filter": "filterSelected",
             "filteredNodes": [
-                "4859d8483ff6743b",
                 "07b486ae105257a8"
             ]
-        }
+        },
+        "menu-menu-item-sidebar": false
     }
 }
