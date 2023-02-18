@@ -1,0 +1,98 @@
+{
+  "Body_Temperature_Chart": {
+    "class": "org.openhab.core.ui.components.RootUIComponent",
+    "value": {
+      "uid": "Body_Temperature_Chart",
+      "tags": [],
+      "props": {
+        "parameters": [],
+        "parameterGroups": []
+      },
+      "timestamp": "Feb 18, 2023, 4:49:23 PM",
+      "component": "oh-chart-page",
+      "config": {
+        "label": "Body temperature chart"
+      },
+      "slots": {
+        "grid": [
+          {
+            "component": "oh-chart-grid",
+            "config": {}
+          }
+        ],
+        "series": [],
+        "xAxis": [],
+        "yAxis": []
+      }
+    }
+  },
+  "overview": {
+    "class": "org.openhab.core.ui.components.RootUIComponent",
+    "value": {
+      "uid": "overview",
+      "tags": [],
+      "props": {
+        "parameters": [],
+        "parameterGroups": []
+      },
+      "timestamp": "Feb 18, 2023, 4:29:53 PM",
+      "component": "oh-layout-page",
+      "config": {
+        "label": "Overview"
+      },
+      "slots": {
+        "default": [],
+        "masonry": [
+          {
+            "component": "oh-masonry",
+            "slots": {
+              "default": [
+                {
+                  "component": "oh-gauge-card",
+                  "config": {
+                    "item": "Body_Temperature",
+                    "max": 50.0,
+                    "min": 0.0,
+                    "title": "Body temperature card",
+                    "type": "circle"
+                  }
+                },
+                {
+                  "component": "oh-gauge-card",
+                  "config": {
+                    "item": "Heart_Rate",
+                    "max": 250.0,
+                    "min": 0.0,
+                    "title": "Heart rate card",
+                    "type": "circle"
+                  }
+                },
+                {
+                  "component": "oh-gauge-card",
+                  "config": {
+                    "item": "Systolic_Pressure",
+                    "title": "Systolic pressure card"
+                  }
+                },
+                {
+                  "component": "oh-gauge-card",
+                  "config": {
+                    "item": "Dyastolic_Pressure",
+                    "title": "Dyastolic pressure card"
+                  }
+                },
+                {
+                  "component": "oh-gauge-card",
+                  "config": {
+                    "item": "Glycemia",
+                    "title": "Glycemia card"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -48,14 +48,14 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "30",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 160,
+        "x": 170,
         "y": 280,
         "wires": [
             [
