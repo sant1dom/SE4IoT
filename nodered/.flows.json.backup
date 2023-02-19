@@ -35,50 +35,17 @@
         "sessionExpiry": ""
     },
     {
-        "id": "08538bbf14330fe1",
-        "type": "inject",
-        "z": "2f389b627abce8fd",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "10",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 170,
-        "y": 280,
-        "wires": [
-            [
-                "b32782ab60ee55d5",
-                "0101f90a66b304e6",
-                "99a4fc7e6b91f30c",
-                "d0a2d1988b8d23f9",
-                "6acad7352fea86fd"
-            ]
-        ]
-    },
-    {
         "id": "b32782ab60ee55d5",
         "type": "function",
         "z": "2f389b627abce8fd",
         "name": "Simulate heart rate ",
-        "func": "function simulateHeartRate() {\n    const mean = 80; // mean value for heart rate\n    const sd = 10; // standard deviation for for heart rate\n    const randomValue = (Math.random() * 2 - 1) + (Math.random() * 2 - 1) + (Math.random() * 2 - 1); // sum of three random values between -1 and 1\n    const hr = Math.round((mean + sd * randomValue) * 10) / 10; // round to one decimal place\n    return hr;\n}\n\nmsg.payload = JSON.stringify({\n    \"heartRate\": simulateHeartRate()\n    });\nreturn msg;",
+        "func": "function simulateHeartRate() {\n    const mean = msg.payload; // mean value for heart rate\n    const sd = 10; // standard deviation for for heart rate\n    const randomValue = (Math.random() * 2 - 1) + (Math.random() * 2 - 1) + (Math.random() * 2 - 1); // sum of three random values between -1 and 1\n    const hr = Math.round((mean + sd * randomValue) * 10) / 10; // round to one decimal place\n    return hr;\n}\n\nmsg.payload = JSON.stringify({\n    \"heartRate\": simulateHeartRate()\n    });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
+        "x": 670,
         "y": 80,
         "wires": [
             [
@@ -101,7 +68,7 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 510,
+        "x": 810,
         "y": 20,
         "wires": []
     },
@@ -118,7 +85,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 940,
+        "x": 1240,
         "y": 300,
         "wires": []
     },
@@ -1417,13 +1384,13 @@
         "type": "function",
         "z": "2f389b627abce8fd",
         "name": "Simulate systolic sensor",
-        "func": "function simulateSystolic() {\n    const mean = 110; // mean value for body temperature in °C\n    const sd = 10; // standard deviation for body temperature in °C\n    const randomValue = (Math.random() * 2 - 1) + (Math.random() * 2 - 1) + (Math.random() * 2 - 1); // sum of three random values between -1 and 1\n    const systolic = Math.round((mean + sd * randomValue) * 10) / 10; // round to one decimal place\n    return systolic;\n}\n\nmsg.payload = JSON.stringify({\n    \"systolic\": simulateSystolic()\n    });\nreturn msg;",
+        "func": "function simulateSystolic() {\n    const mean = msg.payload; // mean value for body temperature in °C\n    const sd = 10; // standard deviation for body temperature in °C\n    const randomValue = (Math.random() * 2 - 1) + (Math.random() * 2 - 1) + (Math.random() * 2 - 1); // sum of three random values between -1 and 1\n    const systolic = Math.round((mean + sd * randomValue) * 10) / 10; // round to one decimal place\n    return systolic;\n}\n\nmsg.payload = JSON.stringify({\n    \"systolic\": simulateSystolic()\n    });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 390,
+        "x": 690,
         "y": 180,
         "wires": [
             [
@@ -1446,7 +1413,7 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 520,
+        "x": 820,
         "y": 120,
         "wires": []
     },
@@ -1455,13 +1422,13 @@
         "type": "function",
         "z": "2f389b627abce8fd",
         "name": "Simulate dyastolic sensor",
-        "func": "function simulateDyastolic() {\n    const mean = 80; // mean value for body temperature in °C\n    const sd = 5; // standard deviation for body temperature in °C\n    const randomValue = (Math.random() * 2 - 1) + (Math.random() * 2 - 1) + (Math.random() * 2 - 1); // sum of three random values between -1 and 1\n    const dyastolic = Math.round((mean + sd * randomValue) * 10) / 10; // round to one decimal place\n    return dyastolic;\n}\n\nmsg.payload = JSON.stringify({\n    \"dyastolic\": simulateDyastolic()\n});\nreturn msg;",
+        "func": "function simulateDyastolic() {\n    const mean = msg.payload; // mean value for body temperature in °C\n    const sd = 5; // standard deviation for body temperature in °C\n    const randomValue = (Math.random() * 2 - 1) + (Math.random() * 2 - 1) + (Math.random() * 2 - 1); // sum of three random values between -1 and 1\n    const dyastolic = Math.round((mean + sd * randomValue) * 10) / 10; // round to one decimal place\n    return dyastolic;\n}\n\nmsg.payload = JSON.stringify({\n    \"dyastolic\": simulateDyastolic()\n});\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 390,
+        "x": 690,
         "y": 280,
         "wires": [
             [
@@ -1484,7 +1451,7 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 520,
+        "x": 820,
         "y": 220,
         "wires": []
     },
@@ -1493,13 +1460,13 @@
         "type": "function",
         "z": "2f389b627abce8fd",
         "name": "Simulate body temperature sensor",
-        "func": "function simulateBodyTemperature() {\n    const mean = 37; // mean value for body temperature in °C\n    const sd = 0.3; // standard deviation for body temperature in °C\n    const randomValue = (Math.random() * 2 - 1) + (Math.random() * 2 - 1) + (Math.random() * 2 - 1); // sum of three random values between -1 and 1\n    const bodyTemperature = Math.round((mean + sd * randomValue) * 10) / 10; // round to one decimal place\n    return bodyTemperature;\n}\n\nmsg.payload = JSON.stringify({\n    \"bodyTemperature\": simulateBodyTemperature()\n    });\nreturn msg;",
+        "func": "function simulateBodyTemperature() {\n    const mean = msg.payload; // mean value for body temperature in °C\n    const sd = 0.5; // standard deviation for body temperature in °C\n    const randomValue = (Math.random() * 2 - 1) + (Math.random() * 2 - 1) + (Math.random() * 2 - 1); // sum of three random values between -1 and 1\n    const bodyTemperature = Math.round((mean + sd * randomValue) * 10) / 10; // round to one decimal place\n    return bodyTemperature;\n}\n\nmsg.payload = JSON.stringify({\n    \"bodyTemperature\": simulateBodyTemperature()\n    });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
+        "x": 700,
         "y": 380,
         "wires": [
             [
@@ -1522,7 +1489,7 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 500,
+        "x": 800,
         "y": 320,
         "wires": []
     },
@@ -1531,13 +1498,13 @@
         "type": "function",
         "z": "2f389b627abce8fd",
         "name": "Simulate glycemia sensor",
-        "func": "function simulateGlycemia() {\n    const mean = 85; // mean value for glycemia\n    const sd = 10; // standard deviation for glycemia\n    const randomValue = (Math.random() * 2 - 1) + (Math.random() * 2 - 1) + (Math.random() * 2 - 1); // sum of three random values between -1 and 1\n    const glycemiaValue = Math.round((mean + sd * randomValue) * 10) / 10; // round to one decimal place\n    return glycemiaValue;\n}\n\nmsg.payload = JSON.stringify({\n    \"glycemia\": simulateGlycemia()\n    });\nreturn msg;",
+        "func": "function simulateGlycemia() {\n    const mean = msg.payload; // mean value for glycemia\n    const sd = 10; // standard deviation for glycemia\n    const randomValue = (Math.random() * 2 - 1) + (Math.random() * 2 - 1) + (Math.random() * 2 - 1); // sum of three random values between -1 and 1\n    const glycemiaValue = Math.round((mean + sd * randomValue) * 10) / 10; // round to one decimal place\n    return glycemiaValue;\n}\n\nmsg.payload = JSON.stringify({\n    \"glycemia\": simulateGlycemia()\n    });\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
+        "x": 670,
         "y": 480,
         "wires": [
             [
@@ -1560,8 +1527,211 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 510,
+        "x": 810,
         "y": 420,
         "wires": []
+    },
+    {
+        "id": "1298c1645adddfd0",
+        "type": "function",
+        "z": "2f389b627abce8fd",
+        "name": "Check Disease",
+        "func": "if (msg.payload.tachycardia){\n    msg.payload = 120\n}\nelse{\n    msg.payload = 80\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 80,
+        "wires": [
+            [
+                "b32782ab60ee55d5"
+            ]
+        ]
+    },
+    {
+        "id": "1ac9163f488a9e0f",
+        "type": "mqtt in",
+        "z": "2f389b627abce8fd",
+        "name": "",
+        "topic": "diseases",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "50eba6fac0d3c0ca",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 280,
+        "wires": [
+            [
+                "4e78326fec9b2d9e",
+                "1298c1645adddfd0",
+                "243ed835b9f81761",
+                "43d67e529d87861c",
+                "afd8d34abf50e2cb",
+                "cd8918fd56580e8e"
+            ]
+        ]
+    },
+    {
+        "id": "4e78326fec9b2d9e",
+        "type": "debug",
+        "z": "2f389b627abce8fd",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "c2a0aed2426cd3ec",
+        "type": "mqtt out",
+        "z": "2f389b627abce8fd",
+        "name": "",
+        "topic": "diseases",
+        "qos": "2",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "50eba6fac0d3c0ca",
+        "x": 1440,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "6d1ef55ea5db12c5",
+        "type": "function",
+        "z": "2f389b627abce8fd",
+        "name": "Simulate Diseases",
+        "func": "msg.payload = JSON.stringify({\n    \"highPressure\":true,\n    \"fever\":true,\n    \"diabetes\":true,\n    \"tachycardia\":true\n});\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1230,
+        "y": 520,
+        "wires": [
+            [
+                "c2a0aed2426cd3ec"
+            ]
+        ]
+    },
+    {
+        "id": "6eed8e52ffef79fd",
+        "type": "inject",
+        "z": "2f389b627abce8fd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1010,
+        "y": 520,
+        "wires": [
+            [
+                "6d1ef55ea5db12c5"
+            ]
+        ]
+    },
+    {
+        "id": "243ed835b9f81761",
+        "type": "function",
+        "z": "2f389b627abce8fd",
+        "name": "Check Disease",
+        "func": "if (msg.payload.highPressure){\n    msg.payload = 150\n}\nelse{\n    msg.payload = 110\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 180,
+        "wires": [
+            [
+                "0101f90a66b304e6"
+            ]
+        ]
+    },
+    {
+        "id": "43d67e529d87861c",
+        "type": "function",
+        "z": "2f389b627abce8fd",
+        "name": "Check Disease",
+        "func": "if (msg.payload.highPressure){\n    msg.payload = 100\n}\nelse{\n    msg.payload = 80\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 280,
+        "wires": [
+            [
+                "99a4fc7e6b91f30c"
+            ]
+        ]
+    },
+    {
+        "id": "afd8d34abf50e2cb",
+        "type": "function",
+        "z": "2f389b627abce8fd",
+        "name": "Check Disease",
+        "func": "if (msg.payload.fever){\n    msg.payload = 39\n}\nelse{\n    msg.payload = 36.5\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 380,
+        "wires": [
+            [
+                "d0a2d1988b8d23f9"
+            ]
+        ]
+    },
+    {
+        "id": "cd8918fd56580e8e",
+        "type": "function",
+        "z": "2f389b627abce8fd",
+        "name": "Check Disease",
+        "func": "if (msg.payload.diabetes){\n    msg.payload = 220\n}\nelse{\n    msg.payload = 85\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 480,
+        "wires": [
+            [
+                "6acad7352fea86fd"
+            ]
+        ]
     }
 ]
