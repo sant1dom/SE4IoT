@@ -31,9 +31,9 @@
         "deviceid": "healthMonitor"
       },
       "representationProperty": "deviceid",
-      "flag": "NEW",
+      "flag": "IGNORED",
       "label": "healthMonitor",
-      "timestamp": 1676726941057,
+      "timestamp": 1676800014726,
       "timeToLive": -1
     }
   }
