@@ -159,3 +159,5 @@ cython_debug/
 **/volumes
 
 influxdb/
+
+openhab/openhab_userdata/cache

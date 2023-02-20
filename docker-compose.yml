@@ -107,12 +107,3 @@ services:
       - "8081:8081"
     depends_on:
       - mqtt
-
-     
-volumes:
-  openhab_addons:
-    driver: local
-  openhab_conf:
-    driver: local
-  openhab_userdata:
-    driver: local
