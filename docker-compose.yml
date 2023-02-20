@@ -95,7 +95,18 @@ services:
       EXTRA_JAVA_OPTS: "-Duser.timezone=Europe/Berlin"
       OPENHAB_HTTP_PORT: "8080"
       OPENHAB_HTTPS_PORT: "8443"
-      
+
+  api:
+    image: api
+    container_name: api
+    restart: always
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    depends_on:
+      - mqtt
 
      
 volumes:

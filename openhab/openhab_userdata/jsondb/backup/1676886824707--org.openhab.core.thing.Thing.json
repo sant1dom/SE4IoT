@@ -8,7 +8,7 @@
       "configuration": {
         "birthRetain": true,
         "certificatepin": true,
-        "clientid": "12d5b0fb-15d3-4076-999e-018507a8713c",
+        "clientid": "fe5d9421-c0e9-495e-afe6-741be65e3926",
         "enableDiscovery": true,
         "host": "mqtt",
         "hostnameValidated": true,
@@ -90,7 +90,7 @@
           "defaultTags": [],
           "properties": {},
           "configuration": {
-            "stateTopic": "sensors/healthMonitor/bodyTemperatureMonitor/temperature "
+            "stateTopic": "sensors/healthMonitor/bodyTemperatureMonitor/temperature"
           },
           "autoUpdatePolicy": "DEFAULT"
         },
