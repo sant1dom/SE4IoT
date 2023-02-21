@@ -1,0 +1,194 @@
+{
+  "Body_Temperature -\u003e mqtt:topic:cc36b964a4:cca26b94a6:BodyTemperature_Channel": {
+    "class": "org.openhab.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "mqtt",
+          "topic",
+          "cc36b964a4",
+          "cca26b94a6",
+          "BodyTemperature_Channel"
+        ],
+        "uid": "mqtt:topic:cc36b964a4:cca26b94a6:BodyTemperature_Channel"
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "Body_Temperature"
+    }
+  },
+  "Diabete -\u003e mqtt:topic:cc36b964a4:cca26b94a6:Diabete_Channel": {
+    "class": "org.openhab.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "mqtt",
+          "topic",
+          "cc36b964a4",
+          "cca26b94a6",
+          "Diabete_Channel"
+        ],
+        "uid": "mqtt:topic:cc36b964a4:cca26b94a6:Diabete_Channel"
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "Diabete"
+    }
+  },
+  "Dyastolic_Pressure -\u003e mqtt:topic:cc36b964a4:cca26b94a6:Dyastolic_Channel": {
+    "class": "org.openhab.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "mqtt",
+          "topic",
+          "cc36b964a4",
+          "cca26b94a6",
+          "Dyastolic_Channel"
+        ],
+        "uid": "mqtt:topic:cc36b964a4:cca26b94a6:Dyastolic_Channel"
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "Dyastolic_Pressure"
+    }
+  },
+  "Fever -\u003e mqtt:topic:cc36b964a4:cca26b94a6:Fever_Channel": {
+    "class": "org.openhab.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "mqtt",
+          "topic",
+          "cc36b964a4",
+          "cca26b94a6",
+          "Fever_Channel"
+        ],
+        "uid": "mqtt:topic:cc36b964a4:cca26b94a6:Fever_Channel"
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "Fever"
+    }
+  },
+  "Glycemia -\u003e mqtt:topic:cc36b964a4:cca26b94a6:Glycemia_Channel": {
+    "class": "org.openhab.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "mqtt",
+          "topic",
+          "cc36b964a4",
+          "cca26b94a6",
+          "Glycemia_Channel"
+        ],
+        "uid": "mqtt:topic:cc36b964a4:cca26b94a6:Glycemia_Channel"
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "Glycemia"
+    }
+  },
+  "Heart_Rate -\u003e mqtt:topic:cc36b964a4:cca26b94a6:HeartRate_Channel": {
+    "class": "org.openhab.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "mqtt",
+          "topic",
+          "cc36b964a4",
+          "cca26b94a6",
+          "HeartRate_Channel"
+        ],
+        "uid": "mqtt:topic:cc36b964a4:cca26b94a6:HeartRate_Channel"
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "Heart_Rate"
+    }
+  },
+  "High_Pressure -\u003e mqtt:topic:cc36b964a4:cca26b94a6:HighPressure_Channel": {
+    "class": "org.openhab.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "mqtt",
+          "topic",
+          "cc36b964a4",
+          "cca26b94a6",
+          "HighPressure_Channel"
+        ],
+        "uid": "mqtt:topic:cc36b964a4:cca26b94a6:HighPressure_Channel"
+      },
+      "configuration": {
+        "properties": {
+          "profile": "system:default"
+        }
+      },
+      "itemName": "High_Pressure"
+    }
+  },
+  "Systolic_Pressure -\u003e mqtt:topic:cc36b964a4:cca26b94a6:Systolic_Channel": {
+    "class": "org.openhab.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "mqtt",
+          "topic",
+          "cc36b964a4",
+          "cca26b94a6",
+          "Systolic_Channel"
+        ],
+        "uid": "mqtt:topic:cc36b964a4:cca26b94a6:Systolic_Channel"
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "Systolic_Pressure"
+    }
+  },
+  "Tachycardia -\u003e mqtt:topic:cc36b964a4:cca26b94a6:Tachycardia_Channel": {
+    "class": "org.openhab.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "mqtt",
+          "topic",
+          "cc36b964a4",
+          "cca26b94a6",
+          "Tachycardia_Channel"
+        ],
+        "uid": "mqtt:topic:cc36b964a4:cca26b94a6:Tachycardia_Channel"
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "Tachycardia"
+    }
+  },
+  "Thing_Generica_MQTT_Diseases_channel -\u003e mqtt:topic:cc36b964a4:cca26b94a6:Diseases_Channel": {
+    "class": "org.openhab.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "mqtt",
+          "topic",
+          "cc36b964a4",
+          "cca26b94a6",
+          "Diseases_Channel"
+        ],
+        "uid": "mqtt:topic:cc36b964a4:cca26b94a6:Diseases_Channel"
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "Thing_Generica_MQTT_Diseases_channel"
+    }
+  }
+}

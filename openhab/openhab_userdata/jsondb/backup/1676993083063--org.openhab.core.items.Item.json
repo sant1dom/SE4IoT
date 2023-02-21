@@ -1,0 +1,172 @@
+{
+  "BloodPressure": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "Group",
+      "tags": []
+    }
+  },
+  "Body_Temperature": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "Number",
+      "tags": [],
+      "label": "Temperature [%.1f °C]"
+    }
+  },
+  "Diabete": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [
+        "Diseases"
+      ],
+      "itemType": "Switch",
+      "tags": [],
+      "label": "Diabete",
+      "category": "diabetes"
+    }
+  },
+  "Diseases": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "Group",
+      "tags": []
+    }
+  },
+  "Diuretic": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [
+        "Interventions"
+      ],
+      "itemType": "Switch",
+      "tags": [],
+      "label": "Diuretic",
+      "category": "diuretic"
+    }
+  },
+  "Dyastolic_Pressure": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [
+        "BloodPressure"
+      ],
+      "itemType": "Number",
+      "tags": [],
+      "label": "Pressure [%u mmHg]"
+    }
+  },
+  "Fever": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [
+        "Diseases"
+      ],
+      "itemType": "Switch",
+      "tags": [],
+      "label": "Fever",
+      "category": "temperature_hot"
+    }
+  },
+  "Glycemia": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "Number",
+      "tags": [],
+      "label": "Glycemia [%u mmol/L] ",
+      "category": ""
+    }
+  },
+  "Heart_Rate": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "Number",
+      "tags": [],
+      "label": "Rate [%u BPM]"
+    }
+  },
+  "High_Pressure": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [
+        "Diseases"
+      ],
+      "itemType": "Switch",
+      "tags": [],
+      "label": "High Pressure",
+      "category": "high_pressure"
+    }
+  },
+  "ICD": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [
+        "Interventions"
+      ],
+      "itemType": "Switch",
+      "tags": [],
+      "label": "ICD",
+      "category": "icd"
+    }
+  },
+  "InsulinaInjection": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [
+        "Interventions"
+      ],
+      "itemType": "Switch",
+      "tags": [],
+      "label": "Insulina Injection",
+      "category": "insulin"
+    }
+  },
+  "Interventions": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "Group",
+      "tags": []
+    }
+  },
+  "Systolic_Pressure": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [
+        "BloodPressure"
+      ],
+      "itemType": "Number",
+      "tags": [],
+      "label": "Pressure [%u mmHg]"
+    }
+  },
+  "Tachipirina": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [
+        "Interventions"
+      ],
+      "itemType": "Switch",
+      "tags": [],
+      "label": "Tachipirina",
+      "category": "tachipirina"
+    }
+  },
+  "Tachycardia": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [
+        "Diseases"
+      ],
+      "itemType": "Switch",
+      "tags": [],
+      "label": "Tachycardia",
+      "category": "tachycardia"
+    }
+  }
+}

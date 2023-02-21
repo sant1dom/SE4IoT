@@ -1,0 +1,208 @@
+{
+  "mqtt:broker:cc36b964a4": {
+    "class": "org.openhab.core.thing.internal.ThingStorageEntity",
+    "value": {
+      "isBridge": true,
+      "channels": [],
+      "label": "Broker MQTT",
+      "configuration": {
+        "birthRetain": true,
+        "certificatepin": true,
+        "clientid": "fe1e7035-c028-48b7-a69d-d6c0876f94bc",
+        "enableDiscovery": true,
+        "host": "mqtt",
+        "hostnameValidated": true,
+        "keepAlive": 60,
+        "lwtQos": 0,
+        "lwtRetain": true,
+        "mqttVersion": "V3",
+        "port": 1884,
+        "protocol": "TCP",
+        "publickeypin": true,
+        "qos": 0,
+        "reconnectTime": 60000,
+        "secure": false,
+        "shutdownRetain": false
+      },
+      "properties": {},
+      "UID": "mqtt:broker:cc36b964a4",
+      "thingTypeUID": "mqtt:broker"
+    }
+  },
+  "mqtt:topic:cc36b964a4:cca26b94a6": {
+    "class": "org.openhab.core.thing.internal.ThingStorageEntity",
+    "value": {
+      "isBridge": false,
+      "channels": [
+        {
+          "uid": "mqtt:topic:cc36b964a4:cca26b94a6:HeartRate_Channel",
+          "id": "HeartRate_Channel",
+          "channelTypeUID": "mqtt:number",
+          "itemType": "Number",
+          "kind": "STATE",
+          "label": "Body heartrate channel",
+          "description": "",
+          "defaultTags": [],
+          "properties": {},
+          "configuration": {
+            "max": 220.0,
+            "min": 0.0,
+            "stateTopic": "sensors/healthMonitor/heartRateMonitor/heartRate",
+            "transformationPattern": "JSONPATH:$.heartRate"
+          },
+          "autoUpdatePolicy": "DEFAULT"
+        },
+        {
+          "uid": "mqtt:topic:cc36b964a4:cca26b94a6:Systolic_Channel",
+          "id": "Systolic_Channel",
+          "channelTypeUID": "mqtt:number",
+          "itemType": "Number",
+          "kind": "STATE",
+          "label": "Body systolic pressure channel",
+          "description": "",
+          "defaultTags": [],
+          "properties": {},
+          "configuration": {
+            "max": 300.0,
+            "min": 0.0,
+            "stateTopic": "sensors/healthMonitor/bloodPressureMonitor/systolic",
+            "transformationPattern": "JSONPATH:$.systolic"
+          },
+          "autoUpdatePolicy": "DEFAULT"
+        },
+        {
+          "uid": "mqtt:topic:cc36b964a4:cca26b94a6:Dyastolic_Channel",
+          "id": "Dyastolic_Channel",
+          "channelTypeUID": "mqtt:number",
+          "itemType": "Number",
+          "kind": "STATE",
+          "label": "Body dyastolic pressure channel",
+          "description": "",
+          "defaultTags": [],
+          "properties": {},
+          "configuration": {
+            "max": 300.0,
+            "min": 0.0,
+            "stateTopic": "sensors/healthMonitor/bloodPressureMonitor/dyastolic",
+            "transformationPattern": "JSONPATH:$.dyastolic"
+          },
+          "autoUpdatePolicy": "DEFAULT"
+        },
+        {
+          "uid": "mqtt:topic:cc36b964a4:cca26b94a6:BodyTemperature_Channel",
+          "id": "BodyTemperature_Channel",
+          "channelTypeUID": "mqtt:number",
+          "itemType": "Number",
+          "kind": "STATE",
+          "label": "Body temperature channel",
+          "description": "",
+          "defaultTags": [],
+          "properties": {},
+          "configuration": {
+            "max": 100.0,
+            "min": 0.0,
+            "stateTopic": "sensors/healthMonitor/bodyTemperatureMonitor/temperature",
+            "transformationPattern": "JSONPATH:$.bodyTemperature"
+          },
+          "autoUpdatePolicy": "DEFAULT"
+        },
+        {
+          "uid": "mqtt:topic:cc36b964a4:cca26b94a6:Glycemia_Channel",
+          "id": "Glycemia_Channel",
+          "channelTypeUID": "mqtt:number",
+          "itemType": "Number",
+          "kind": "STATE",
+          "label": "Body glycemia channel",
+          "description": "",
+          "defaultTags": [],
+          "properties": {},
+          "configuration": {
+            "max": 300.0,
+            "min": 0.0,
+            "stateTopic": "sensors/healthMonitor/glycemiaMonitor/glycemia",
+            "transformationPattern": "JSONPATH:$.glycemia"
+          },
+          "autoUpdatePolicy": "DEFAULT"
+        },
+        {
+          "uid": "mqtt:topic:cc36b964a4:cca26b94a6:Fever_Channel",
+          "id": "Fever_Channel",
+          "channelTypeUID": "mqtt:switch",
+          "itemType": "Switch",
+          "kind": "STATE",
+          "label": "Body fever channel",
+          "description": "",
+          "defaultTags": [],
+          "properties": {},
+          "configuration": {
+            "off": "false",
+            "on": "true",
+            "stateTopic": "diseases",
+            "transformationPattern": "JSONPATH:$.fever"
+          },
+          "autoUpdatePolicy": "DEFAULT"
+        },
+        {
+          "uid": "mqtt:topic:cc36b964a4:cca26b94a6:Diabete_Channel",
+          "id": "Diabete_Channel",
+          "channelTypeUID": "mqtt:switch",
+          "itemType": "Switch",
+          "kind": "STATE",
+          "label": "Body diabete channel",
+          "description": "",
+          "defaultTags": [],
+          "properties": {},
+          "configuration": {
+            "off": "false",
+            "on": "true",
+            "stateTopic": "diseases",
+            "transformationPattern": "JSONPATH:$.diabetes"
+          },
+          "autoUpdatePolicy": "DEFAULT"
+        },
+        {
+          "uid": "mqtt:topic:cc36b964a4:cca26b94a6:Tachycardia_Channel",
+          "id": "Tachycardia_Channel",
+          "channelTypeUID": "mqtt:switch",
+          "itemType": "Switch",
+          "kind": "STATE",
+          "label": "Body tachycardia channel",
+          "description": "",
+          "defaultTags": [],
+          "properties": {},
+          "configuration": {
+            "off": "false",
+            "on": "true",
+            "stateTopic": "diseases",
+            "transformationPattern": "JSONPATH:$.tachycardia"
+          },
+          "autoUpdatePolicy": "DEFAULT"
+        },
+        {
+          "uid": "mqtt:topic:cc36b964a4:cca26b94a6:HighPressure_Channel",
+          "id": "HighPressure_Channel",
+          "channelTypeUID": "mqtt:switch",
+          "itemType": "Number",
+          "kind": "STATE",
+          "label": "Body high pressure channel",
+          "description": "",
+          "defaultTags": [],
+          "properties": {},
+          "configuration": {
+            "off": "false",
+            "on": "true",
+            "stateTopic": "diseases",
+            "transformationPattern": "JSONPATH:$.highPressure"
+          },
+          "autoUpdatePolicy": "DEFAULT"
+        }
+      ],
+      "label": "Thing Generica MQTT",
+      "bridgeUID": "mqtt:broker:cc36b964a4",
+      "configuration": {},
+      "properties": {},
+      "UID": "mqtt:topic:cc36b964a4:cca26b94a6",
+      "thingTypeUID": "mqtt:topic"
+    }
+  }
+}

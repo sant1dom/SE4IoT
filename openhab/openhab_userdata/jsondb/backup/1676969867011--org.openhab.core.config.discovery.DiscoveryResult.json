@@ -1,0 +1,40 @@
+{
+  "mqtt:homie300:cc36b964a4:healthMonitor": {
+    "class": "org.openhab.core.config.discovery.internal.DiscoveryResultImpl",
+    "value": {
+      "bridgeUID": {
+        "segments": [
+          "mqtt",
+          "broker",
+          "cc36b964a4"
+        ],
+        "uid": "mqtt:broker:cc36b964a4"
+      },
+      "thingUID": {
+        "segments": [
+          "mqtt",
+          "homie300",
+          "cc36b964a4",
+          "healthMonitor"
+        ],
+        "uid": "mqtt:homie300:cc36b964a4:healthMonitor"
+      },
+      "thingTypeUID": {
+        "segments": [
+          "mqtt",
+          "homie300"
+        ],
+        "uid": ""
+      },
+      "properties": {
+        "basetopic": "sensors",
+        "deviceid": "healthMonitor"
+      },
+      "representationProperty": "deviceid",
+      "flag": "IGNORED",
+      "label": "healthMonitor",
+      "timestamp": 1676969866469,
+      "timeToLive": -1
+    }
+  }
+}

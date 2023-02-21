@@ -1,0 +1,157 @@
+{
+  "page_54ae48db2b": {
+    "class": "org.openhab.core.ui.components.RootUIComponent",
+    "value": {
+      "uid": "page_54ae48db2b",
+      "tags": [],
+      "props": {
+        "parameters": [],
+        "parameterGroups": []
+      },
+      "timestamp": "Feb 21, 2023, 4:55:20 PM",
+      "component": "Sitemap",
+      "config": {
+        "label": "My body automation"
+      },
+      "slots": {
+        "widgets": [
+          {
+            "component": "Frame",
+            "config": {
+              "label": "My Body"
+            },
+            "slots": {
+              "widgets": [
+                {
+                  "component": "Text",
+                  "config": {
+                    "icon": "heart_rate.png",
+                    "item": "Heart_Rate",
+                    "label": "Heart Rate"
+                  }
+                },
+                {
+                  "component": "Text",
+                  "config": {
+                    "icon": "blood_pressure.png",
+                    "item": "Systolic_Pressure",
+                    "label": "Systolic"
+                  }
+                },
+                {
+                  "component": "Text",
+                  "config": {
+                    "icon": "blood_pressure.png",
+                    "item": "Dyastolic_Pressure",
+                    "label": "Dyastolic"
+                  }
+                },
+                {
+                  "component": "Text",
+                  "config": {
+                    "icon": "temperature",
+                    "item": "Body_Temperature",
+                    "label": "Body Temperature [%.1f °C]"
+                  }
+                },
+                {
+                  "component": "Text",
+                  "config": {
+                    "icon": "glycemia_icon",
+                    "item": "Glycemia",
+                    "label": "Glycemia"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "component": "Frame",
+            "config": {
+              "label": "Diseases"
+            },
+            "slots": {
+              "widgets": [
+                {
+                  "component": "Switch",
+                  "config": {
+                    "icon": "high_pressure.png",
+                    "item": "High_Pressure",
+                    "label": "High Pressure"
+                  }
+                },
+                {
+                  "component": "Switch",
+                  "config": {
+                    "icon": "temperature_hot",
+                    "item": "Fever",
+                    "label": "Fever",
+                    "mappings": []
+                  }
+                },
+                {
+                  "component": "Switch",
+                  "config": {
+                    "icon": "diabetes.png",
+                    "item": "Diabete",
+                    "label": "Diabete"
+                  }
+                },
+                {
+                  "component": "Switch",
+                  "config": {
+                    "icon": "tachycardia.png",
+                    "item": "Tachycardia",
+                    "label": "Tachycardia"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "component": "Frame",
+            "config": {
+              "label": "Precautionary Interventions"
+            },
+            "slots": {
+              "widgets": [
+                {
+                  "component": "Switch",
+                  "config": {
+                    "icon": "diuretic.png",
+                    "item": "Diuretic",
+                    "label": "Diuretic"
+                  }
+                },
+                {
+                  "component": "Switch",
+                  "config": {
+                    "icon": "tachipirina.png",
+                    "item": "Tachipirina",
+                    "label": "Tachipirina"
+                  }
+                },
+                {
+                  "component": "Switch",
+                  "config": {
+                    "icon": "insulin.png",
+                    "item": "InsulinaInjection",
+                    "label": "Insulin Injection"
+                  }
+                },
+                {
+                  "component": "Switch",
+                  "config": {
+                    "icon": "icd.png",
+                    "item": "ICD",
+                    "label": "Implantable Cardioverter-Defibrillator"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}
