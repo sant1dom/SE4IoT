@@ -24,7 +24,7 @@
       ],
       "itemType": "Switch",
       "tags": [],
-      "label": "Diabete",
+      "label": "Diabetes",
       "category": "diabetes"
     }
   },
@@ -87,7 +87,8 @@
       "groupNames": [],
       "itemType": "Number",
       "tags": [],
-      "label": "Rate [%u BPM]"
+      "label": "Rate [%.0f BPM]",
+      "category": ""
     }
   },
   "High_Pressure": {

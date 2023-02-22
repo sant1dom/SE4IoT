@@ -24,7 +24,7 @@
       ],
       "itemType": "Switch",
       "tags": [],
-      "label": "Diabete",
+      "label": "Diabetes",
       "category": "diabetes"
     }
   },
@@ -87,7 +87,8 @@
       "groupNames": [],
       "itemType": "Number",
       "tags": [],
-      "label": "Rate [%u BPM]"
+      "label": "Rate [%.0f BPM]",
+      "category": ""
     }
   },
   "High_Pressure": {
@@ -122,7 +123,7 @@
       ],
       "itemType": "Switch",
       "tags": [],
-      "label": "Insulina Injection",
+      "label": "Insuline Injection",
       "category": "insulin"
     }
   },
@@ -153,7 +154,7 @@
       ],
       "itemType": "Switch",
       "tags": [],
-      "label": "Tachipirina",
+      "label": "Tachypirine",
       "category": "tachipirina"
     }
   },
@@ -167,6 +168,18 @@
       "tags": [],
       "label": "Tachycardia",
       "category": "tachycardia"
+    }
+  },
+  "Thing_Generica_MQTT_Diseases_channel": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "String",
+      "tags": [
+        "Point"
+      ],
+      "label": "Diseases channel",
+      "category": ""
     }
   }
 }

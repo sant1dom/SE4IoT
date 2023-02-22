@@ -8,10 +8,10 @@
         "parameters": [],
         "parameterGroups": []
       },
-      "timestamp": "Feb 21, 2023, 4:55:33 PM",
+      "timestamp": "Feb 22, 2023, 1:23:38 PM",
       "component": "Sitemap",
       "config": {
-        "label": "My body automation"
+        "label": "My Body Automation"
       },
       "slots": {
         "widgets": [
@@ -27,7 +27,7 @@
                   "config": {
                     "icon": "heart_rate.png",
                     "item": "Heart_Rate",
-                    "label": "Heart Rate"
+                    "label": "Heart Rate [%d BPM]"
                   }
                 },
                 {
@@ -35,7 +35,7 @@
                   "config": {
                     "icon": "blood_pressure.png",
                     "item": "Systolic_Pressure",
-                    "label": "Systolic"
+                    "label": "Systolic [%d mmHg]"
                   }
                 },
                 {
@@ -43,7 +43,7 @@
                   "config": {
                     "icon": "blood_pressure.png",
                     "item": "Dyastolic_Pressure",
-                    "label": "Dyastolic"
+                    "label": "Dyastolic [%d mmHg]"
                   }
                 },
                 {
@@ -59,7 +59,7 @@
                   "config": {
                     "icon": "glycemia_icon",
                     "item": "Glycemia",
-                    "label": "Glycemia"
+                    "label": "Glycemia [%.1f mmol/L]"
                   }
                 }
               ]
@@ -85,8 +85,7 @@
                   "config": {
                     "icon": "temperature_hot",
                     "item": "Fever",
-                    "label": "Fever",
-                    "mappings": []
+                    "label": "Fever"
                   }
                 },
                 {
@@ -94,7 +93,7 @@
                   "config": {
                     "icon": "diabetes.png",
                     "item": "Diabete",
-                    "label": "Diabete"
+                    "label": "Diabetes"
                   }
                 },
                 {
@@ -128,7 +127,7 @@
                   "config": {
                     "icon": "tachipirina.png",
                     "item": "Tachipirina",
-                    "label": "Tachipirina"
+                    "label": "Paracetamol"
                   }
                 },
                 {

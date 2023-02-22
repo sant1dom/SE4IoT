@@ -421,7 +421,6 @@
           "inputs": {},
           "id": "2",
           "configuration": {
-            "script": "val mqttActions \u003d getActions(\"mqtt\",\"mqtt:broker:cc36b964a4\")\nvar diseases \u003d Thing_Generica_MQTT_Diseases_channel.state.toString\ndiseases \u003d diseases.replaceAll(\"\\\"highPressure\\\":true\", \"\\\"highPressure\\\":false\")\n\nlogWarn(\"diseases\", \"Turning off HIGH PRESSURE: {}\", diseases)\nmqttActions.publishMQTT(\"diseases\",diseases, true)",
             "type": "application/vnd.openhab.dsl.rule"
           },
           "type": "script.ScriptAction"

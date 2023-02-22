@@ -70,7 +70,9 @@
         "uid": "mqtt:topic:cc36b964a4:cca26b94a6:Fever_Channel"
       },
       "configuration": {
-        "properties": {}
+        "properties": {
+          "profile": "system:default"
+        }
       },
       "itemName": "Fever"
     }
@@ -170,6 +172,25 @@
         "properties": {}
       },
       "itemName": "Tachycardia"
+    }
+  },
+  "Thing_Generica_MQTT_Diseases_channel -\u003e mqtt:topic:cc36b964a4:cca26b94a6:Diseases_Channel": {
+    "class": "org.openhab.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "mqtt",
+          "topic",
+          "cc36b964a4",
+          "cca26b94a6",
+          "Diseases_Channel"
+        ],
+        "uid": "mqtt:topic:cc36b964a4:cca26b94a6:Diseases_Channel"
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "Thing_Generica_MQTT_Diseases_channel"
     }
   }
 }

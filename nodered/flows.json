@@ -1644,14 +1644,14 @@
                 "vt": "str"
             }
         ],
-        "repeat": "10",
+        "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 1010,
+        "x": 1000,
         "y": 520,
         "wires": [
             [

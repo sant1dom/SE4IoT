@@ -8,7 +8,7 @@
       "configuration": {
         "birthRetain": true,
         "certificatepin": true,
-        "clientid": "fe1e7035-c028-48b7-a69d-d6c0876f94bc",
+        "clientid": "3aeb9b49-1114-4abe-afad-1943dc0ee5c1",
         "enableDiscovery": true,
         "host": "mqtt",
         "hostnameValidated": true,
@@ -197,18 +197,17 @@
           "autoUpdatePolicy": "DEFAULT"
         },
         {
-          "uid": "mqtt:topic:cc36b964a4:cca26b94a6:Diuretic_Channel",
-          "id": "Diuretic_Channel",
-          "channelTypeUID": "mqtt:switch",
-          "itemType": "Switch",
+          "uid": "mqtt:topic:cc36b964a4:cca26b94a6:Diseases_Channel",
+          "id": "Diseases_Channel",
+          "channelTypeUID": "mqtt:string",
+          "itemType": "String",
           "kind": "STATE",
-          "label": "Diuretic channel",
+          "label": "Diseases channel",
           "description": "",
           "defaultTags": [],
           "properties": {},
           "configuration": {
-            "commandTopic": "diseases",
-            "payload": "\"highPressure\":false"
+            "stateTopic": "diseases"
           },
           "autoUpdatePolicy": "DEFAULT"
         }

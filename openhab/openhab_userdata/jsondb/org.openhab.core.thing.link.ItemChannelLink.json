@@ -70,7 +70,9 @@
         "uid": "mqtt:topic:cc36b964a4:cca26b94a6:Fever_Channel"
       },
       "configuration": {
-        "properties": {}
+        "properties": {
+          "profile": "system:default"
+        }
       },
       "itemName": "Fever"
     }
