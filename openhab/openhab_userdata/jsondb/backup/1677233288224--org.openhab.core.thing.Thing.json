@@ -8,7 +8,7 @@
       "configuration": {
         "birthRetain": true,
         "certificatepin": true,
-        "clientid": "fe1e7035-c028-48b7-a69d-d6c0876f94bc",
+        "clientid": "00979ec3-e95c-440f-8fb6-97a1c1688e96",
         "enableDiscovery": true,
         "host": "mqtt",
         "hostnameValidated": true,
@@ -193,6 +193,21 @@
             "on": "true",
             "stateTopic": "diseases",
             "transformationPattern": "JSONPATH:$.highPressure"
+          },
+          "autoUpdatePolicy": "DEFAULT"
+        },
+        {
+          "uid": "mqtt:topic:cc36b964a4:cca26b94a6:Diseases_Channel",
+          "id": "Diseases_Channel",
+          "channelTypeUID": "mqtt:string",
+          "itemType": "String",
+          "kind": "STATE",
+          "label": "Diseases channel",
+          "description": "",
+          "defaultTags": [],
+          "properties": {},
+          "configuration": {
+            "stateTopic": "diseases"
           },
           "autoUpdatePolicy": "DEFAULT"
         }

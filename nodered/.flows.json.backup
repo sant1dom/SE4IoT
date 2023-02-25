@@ -156,8 +156,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 310,
-        "y": 620,
+        "x": 330,
+        "y": 840,
         "wires": [
             [
                 "a89945fe80081bcf"
@@ -178,8 +178,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 650,
-        "y": 620,
+        "x": 670,
+        "y": 840,
         "wires": []
     },
     {
@@ -188,8 +188,8 @@
         "z": "2f389b627abce8fd",
         "name": "Health Monitor",
         "info": "",
-        "x": 420,
-        "y": 560,
+        "x": 440,
+        "y": 780,
         "wires": []
     },
     {
@@ -203,8 +203,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 330,
-        "y": 660,
+        "x": 350,
+        "y": 880,
         "wires": [
             [
                 "b73c9937f08e505f"
@@ -225,8 +225,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 650,
-        "y": 660,
+        "x": 670,
+        "y": 880,
         "wires": []
     },
     {
@@ -240,8 +240,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 310,
-        "y": 700,
+        "x": 330,
+        "y": 920,
         "wires": [
             [
                 "74526d24d029d695"
@@ -262,8 +262,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 660,
-        "y": 700,
+        "x": 680,
+        "y": 920,
         "wires": []
     },
     {
@@ -277,8 +277,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 340,
-        "y": 740,
+        "x": 360,
+        "y": 960,
         "wires": [
             [
                 "9fec768adcca77ef"
@@ -299,8 +299,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 650,
-        "y": 740,
+        "x": 670,
+        "y": 960,
         "wires": []
     },
     {
@@ -314,8 +314,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 860,
+        "x": 370,
+        "y": 1080,
         "wires": [
             [
                 "4358e326cc5098a9"
@@ -336,8 +336,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 660,
-        "y": 860,
+        "x": 680,
+        "y": 1080,
         "wires": []
     },
     {
@@ -346,8 +346,8 @@
         "z": "2f389b627abce8fd",
         "name": "Heart Rate Monitor",
         "info": "",
-        "x": 430,
-        "y": 800,
+        "x": 450,
+        "y": 1020,
         "wires": []
     },
     {
@@ -361,8 +361,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 320,
-        "y": 900,
+        "x": 340,
+        "y": 1120,
         "wires": [
             [
                 "ea33711bf811d35b"
@@ -383,8 +383,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 640,
-        "y": 900,
+        "x": 660,
+        "y": 1120,
         "wires": []
     },
     {
@@ -398,8 +398,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 330,
-        "y": 980,
+        "x": 350,
+        "y": 1200,
         "wires": [
             [
                 "6ff5983605c3ef6f"
@@ -420,8 +420,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 680,
-        "y": 980,
+        "x": 700,
+        "y": 1200,
         "wires": []
     },
     {
@@ -435,8 +435,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 310,
-        "y": 1020,
+        "x": 330,
+        "y": 1240,
         "wires": [
             [
                 "9b216a29414491c3"
@@ -457,8 +457,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 630,
-        "y": 1020,
+        "x": 650,
+        "y": 1240,
         "wires": []
     },
     {
@@ -472,8 +472,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 320,
-        "y": 1060,
+        "x": 340,
+        "y": 1280,
         "wires": [
             [
                 "93f2945eb05c8cc3"
@@ -494,8 +494,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 690,
-        "y": 1060,
+        "x": 710,
+        "y": 1280,
         "wires": []
     },
     {
@@ -509,8 +509,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 310,
-        "y": 1100,
+        "x": 330,
+        "y": 1320,
         "wires": [
             [
                 "383f703f0e6b45b1"
@@ -531,8 +531,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 640,
-        "y": 1100,
+        "x": 660,
+        "y": 1320,
         "wires": []
     },
     {
@@ -546,8 +546,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 1220,
+        "x": 370,
+        "y": 1440,
         "wires": [
             [
                 "db5bb6f3f597d172"
@@ -568,8 +568,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 680,
-        "y": 1220,
+        "x": 700,
+        "y": 1440,
         "wires": []
     },
     {
@@ -578,8 +578,8 @@
         "z": "2f389b627abce8fd",
         "name": "Blood Pressure Monitor",
         "info": "",
-        "x": 440,
-        "y": 1160,
+        "x": 460,
+        "y": 1380,
         "wires": []
     },
     {
@@ -596,8 +596,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 690,
-        "y": 1260,
+        "x": 710,
+        "y": 1480,
         "wires": []
     },
     {
@@ -611,8 +611,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 1340,
+        "x": 370,
+        "y": 1560,
         "wires": [
             [
                 "0c766345f082f31b"
@@ -633,8 +633,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 680,
-        "y": 1340,
+        "x": 700,
+        "y": 1560,
         "wires": []
     },
     {
@@ -648,8 +648,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 310,
-        "y": 1380,
+        "x": 330,
+        "y": 1600,
         "wires": [
             [
                 "3574f16ad15e08db"
@@ -670,8 +670,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 640,
-        "y": 1380,
+        "x": 660,
+        "y": 1600,
         "wires": []
     },
     {
@@ -685,8 +685,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 320,
-        "y": 1420,
+        "x": 340,
+        "y": 1640,
         "wires": [
             [
                 "4002f41d77c4a43b"
@@ -707,8 +707,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 690,
-        "y": 1420,
+        "x": 710,
+        "y": 1640,
         "wires": []
     },
     {
@@ -722,8 +722,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 310,
-        "y": 1460,
+        "x": 330,
+        "y": 1680,
         "wires": [
             [
                 "0359d5cb223b07a0"
@@ -744,23 +744,23 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 650,
-        "y": 1460,
+        "x": 670,
+        "y": 1680,
         "wires": []
     },
     {
         "id": "774f4092b98a7ae6",
         "type": "function",
         "z": "2f389b627abce8fd",
-        "name": "Dyastolic Pression",
-        "func": "msg.payload = \"Dyastolic Pression\"\nreturn msg;",
+        "name": "Diastolic Pression",
+        "func": "msg.payload = \"Diastolic Pression\"\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 1520,
+        "x": 370,
+        "y": 1740,
         "wires": [
             [
                 "1034f45773cf7412"
@@ -772,7 +772,7 @@
         "type": "mqtt out",
         "z": "2f389b627abce8fd",
         "name": "",
-        "topic": "sensors/healthMonitor/bloodPressureMonitor/dyastolic/$name",
+        "topic": "sensors/healthMonitor/bloodPressureMonitor/diastolic/$name",
         "qos": "",
         "retain": "true",
         "respTopic": "",
@@ -781,8 +781,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 690,
-        "y": 1520,
+        "x": 700,
+        "y": 1740,
         "wires": []
     },
     {
@@ -796,8 +796,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 310,
-        "y": 1560,
+        "x": 330,
+        "y": 1780,
         "wires": [
             [
                 "adfc59af55764539"
@@ -818,8 +818,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 640,
-        "y": 1560,
+        "x": 660,
+        "y": 1780,
         "wires": []
     },
     {
@@ -833,8 +833,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 320,
-        "y": 1600,
+        "x": 340,
+        "y": 1820,
         "wires": [
             [
                 "409e4c1273a41e52"
@@ -855,8 +855,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 700,
-        "y": 1600,
+        "x": 720,
+        "y": 1820,
         "wires": []
     },
     {
@@ -870,8 +870,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 310,
-        "y": 1640,
+        "x": 330,
+        "y": 1860,
         "wires": [
             [
                 "1846c2538ac76205"
@@ -892,8 +892,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 660,
-        "y": 1640,
+        "x": 680,
+        "y": 1860,
         "wires": []
     },
     {
@@ -907,8 +907,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
-        "y": 1260,
+        "x": 380,
+        "y": 1480,
         "wires": [
             [
                 "3c752b73b14e62d6"
@@ -926,8 +926,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
-        "y": 1760,
+        "x": 390,
+        "y": 1980,
         "wires": [
             [
                 "006b5aee3e741c56"
@@ -948,8 +948,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 730,
-        "y": 1760,
+        "x": 750,
+        "y": 1980,
         "wires": []
     },
     {
@@ -958,8 +958,8 @@
         "z": "2f389b627abce8fd",
         "name": "Body Temperature Monitor",
         "info": "",
-        "x": 450,
-        "y": 1700,
+        "x": 470,
+        "y": 1920,
         "wires": []
     },
     {
@@ -973,8 +973,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 330,
-        "y": 1800,
+        "x": 350,
+        "y": 2020,
         "wires": [
             [
                 "620324791343ebc0"
@@ -995,8 +995,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 660,
-        "y": 1800,
+        "x": 680,
+        "y": 2020,
         "wires": []
     },
     {
@@ -1010,8 +1010,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 1880,
+        "x": 370,
+        "y": 2100,
         "wires": [
             [
                 "0824a6c1b96f514c"
@@ -1032,8 +1032,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 710,
-        "y": 1880,
+        "x": 730,
+        "y": 2100,
         "wires": []
     },
     {
@@ -1047,8 +1047,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 310,
-        "y": 1920,
+        "x": 330,
+        "y": 2140,
         "wires": [
             [
                 "17135e93e6f8a72e"
@@ -1069,8 +1069,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 660,
-        "y": 1920,
+        "x": 680,
+        "y": 2140,
         "wires": []
     },
     {
@@ -1084,8 +1084,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 310,
-        "y": 1960,
+        "x": 330,
+        "y": 2180,
         "wires": [
             [
                 "d9ceab163628cc17"
@@ -1106,8 +1106,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 720,
-        "y": 1960,
+        "x": 740,
+        "y": 2180,
         "wires": []
     },
     {
@@ -1121,8 +1121,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 310,
-        "y": 2000,
+        "x": 330,
+        "y": 2220,
         "wires": [
             [
                 "cd4c36b4721071ea"
@@ -1143,8 +1143,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 680,
-        "y": 2000,
+        "x": 700,
+        "y": 2220,
         "wires": []
     },
     {
@@ -1158,8 +1158,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 340,
-        "y": 2120,
+        "x": 360,
+        "y": 2340,
         "wires": [
             [
                 "7a9e9832c6c81818"
@@ -1180,8 +1180,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 700,
-        "y": 2120,
+        "x": 720,
+        "y": 2340,
         "wires": []
     },
     {
@@ -1190,8 +1190,8 @@
         "z": "2f389b627abce8fd",
         "name": "Glycemia Monitor",
         "info": "",
-        "x": 420,
-        "y": 2060,
+        "x": 440,
+        "y": 2280,
         "wires": []
     },
     {
@@ -1205,8 +1205,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 320,
-        "y": 2160,
+        "x": 340,
+        "y": 2380,
         "wires": [
             [
                 "94759329a47ad99d"
@@ -1227,8 +1227,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 630,
-        "y": 2160,
+        "x": 650,
+        "y": 2380,
         "wires": []
     },
     {
@@ -1242,8 +1242,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 320,
-        "y": 2240,
+        "x": 340,
+        "y": 2460,
         "wires": [
             [
                 "53b2da004feda8be"
@@ -1264,8 +1264,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 670,
-        "y": 2240,
+        "x": 690,
+        "y": 2460,
         "wires": []
     },
     {
@@ -1279,8 +1279,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 310,
-        "y": 2280,
+        "x": 330,
+        "y": 2500,
         "wires": [
             [
                 "23a00e0954e4f2b7"
@@ -1301,8 +1301,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 620,
-        "y": 2280,
+        "x": 640,
+        "y": 2500,
         "wires": []
     },
     {
@@ -1316,8 +1316,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 320,
-        "y": 2320,
+        "x": 340,
+        "y": 2540,
         "wires": [
             [
                 "00c51b705aac2faa"
@@ -1338,8 +1338,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 680,
-        "y": 2320,
+        "x": 700,
+        "y": 2540,
         "wires": []
     },
     {
@@ -1353,8 +1353,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 310,
-        "y": 2360,
+        "x": 330,
+        "y": 2580,
         "wires": [
             [
                 "d72b843946b61d37"
@@ -1375,8 +1375,8 @@
         "correl": "",
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
-        "x": 640,
-        "y": 2360,
+        "x": 660,
+        "y": 2580,
         "wires": []
     },
     {
@@ -1572,7 +1572,9 @@
                 "243ed835b9f81761",
                 "43d67e529d87861c",
                 "afd8d34abf50e2cb",
-                "cd8918fd56580e8e"
+                "cd8918fd56580e8e",
+                "8a1759ff1833bf59",
+                "0a54b37ccb2cd249"
             ]
         ]
     },
@@ -1608,7 +1610,7 @@
         "expiry": "",
         "broker": "50eba6fac0d3c0ca",
         "x": 1440,
-        "y": 520,
+        "y": 540,
         "wires": []
     },
     {
@@ -1616,46 +1618,17 @@
         "type": "function",
         "z": "2f389b627abce8fd",
         "name": "Simulate Diseases",
-        "func": "msg.payload = JSON.stringify({\n    \"highPressure\":false,\n    \"fever\": false,\n    \"diabetes\": true,\n    \"tachycardia\": false\n});\nreturn msg;",
+        "func": "let realtime = global.get(\"realtime\");\nif (realtime === msg.payload)\n    return msg;\nelse {\n    msg.payload = realtime;\n    return msg;\n}\n    ",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1230,
-        "y": 520,
+        "x": 930,
+        "y": 540,
         "wires": [
             [
                 "c2a0aed2426cd3ec"
-            ]
-        ]
-    },
-    {
-        "id": "6eed8e52ffef79fd",
-        "type": "inject",
-        "z": "2f389b627abce8fd",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1000,
-        "y": 520,
-        "wires": [
-            [
-                "6d1ef55ea5db12c5"
             ]
         ]
     },
@@ -1733,6 +1706,57 @@
             [
                 "6acad7352fea86fd"
             ]
+        ]
+    },
+    {
+        "id": "8a1759ff1833bf59",
+        "type": "delay",
+        "z": "2f389b627abce8fd",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "10",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 400,
+        "y": 540,
+        "wires": [
+            [
+                "6d1ef55ea5db12c5"
+            ]
+        ]
+    },
+    {
+        "id": "0a54b37ccb2cd249",
+        "type": "change",
+        "z": "2f389b627abce8fd",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "realtime",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 600,
+        "wires": [
+            []
         ]
     }
 ]
