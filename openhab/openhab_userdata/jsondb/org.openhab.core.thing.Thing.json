@@ -1,4 +1,21 @@
 {
+  "mail:smtp:1076346e1a": {
+    "class": "org.openhab.core.thing.internal.ThingStorageEntity",
+    "value": {
+      "isBridge": false,
+      "channels": [],
+      "label": "SMTP Server",
+      "configuration": {
+        "hostname": "fake-smtp",
+        "port": "1025",
+        "security": "PLAIN",
+        "sender": "medico@test.com"
+      },
+      "properties": {},
+      "UID": "mail:smtp:1076346e1a",
+      "thingTypeUID": "mail:smtp"
+    }
+  },
   "mqtt:broker:cc36b964a4": {
     "class": "org.openhab.core.thing.internal.ThingStorageEntity",
     "value": {
@@ -8,7 +25,7 @@
       "configuration": {
         "birthRetain": true,
         "certificatepin": true,
-        "clientid": "00979ec3-e95c-440f-8fb6-97a1c1688e96",
+        "clientid": "4b7f5ecb-5182-417d-9dd5-3ae1eae076e9",
         "enableDiscovery": true,
         "host": "mqtt",
         "hostnameValidated": true,

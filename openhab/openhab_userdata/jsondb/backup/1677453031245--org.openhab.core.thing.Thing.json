@@ -1,4 +1,21 @@
 {
+  "mail:smtp:1076346e1a": {
+    "class": "org.openhab.core.thing.internal.ThingStorageEntity",
+    "value": {
+      "isBridge": false,
+      "channels": [],
+      "label": "SMTP Server",
+      "configuration": {
+        "hostname": "fake-smtp",
+        "port": "1025",
+        "security": "PLAIN",
+        "sender": "medico_paziente1@test.com"
+      },
+      "properties": {},
+      "UID": "mail:smtp:1076346e1a",
+      "thingTypeUID": "mail:smtp"
+    }
+  },
   "mqtt:broker:cc36b964a4": {
     "class": "org.openhab.core.thing.internal.ThingStorageEntity",
     "value": {
@@ -8,7 +25,7 @@
       "configuration": {
         "birthRetain": true,
         "certificatepin": true,
-        "clientid": "33ae5b76-6723-43f4-b3de-dc5bfdaa54db",
+        "clientid": "f98cb0f6-1e70-4504-8f44-336141c7d055",
         "enableDiscovery": true,
         "host": "mqtt",
         "hostnameValidated": true,
@@ -193,6 +210,21 @@
             "on": "true",
             "stateTopic": "diseases",
             "transformationPattern": "JSONPATH:$.highPressure"
+          },
+          "autoUpdatePolicy": "DEFAULT"
+        },
+        {
+          "uid": "mqtt:topic:cc36b964a4:cca26b94a6:Diseases_Channel",
+          "id": "Diseases_Channel",
+          "channelTypeUID": "mqtt:string",
+          "itemType": "String",
+          "kind": "STATE",
+          "label": "Diseases channel",
+          "description": "",
+          "defaultTags": [],
+          "properties": {},
+          "configuration": {
+            "stateTopic": "diseases"
           },
           "autoUpdatePolicy": "DEFAULT"
         }

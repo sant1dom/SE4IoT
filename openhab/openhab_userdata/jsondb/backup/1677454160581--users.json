@@ -8,6 +8,14 @@
       "roles": [
         "administrator"
       ],
+      "pendingToken": {
+        "authorizationCode": "f53c34b6edd24eab93c5bd63d5cb121e",
+        "clientId": "http://localhost:8080",
+        "redirectUri": "http://localhost:8080",
+        "scope": "admin",
+        "codeChallenge": "e_t0WKwOj5PPDguWTeH_x_MBJusXcIK0ezzRmHQTLBc",
+        "codeChallengeMethod": "S256"
+      },
       "sessions": [
         {
           "sessionId": "7a66315b-a7ed-4e60-ae28-546d4ab48c0b",
@@ -23,7 +31,7 @@
           "sessionId": "9ffcc8d1-efe1-4884-ab8a-862dc7d6f266",
           "refreshToken": "57c027738082491fbabae41225ec0ebc",
           "createdTime": "Feb 20, 2023, 8:26:13 PM",
-          "lastRefreshTime": "Feb 21, 2023, 6:47:36 PM",
+          "lastRefreshTime": "Feb 27, 2023, 12:10:46 AM",
           "clientId": "http://localhost:8080",
           "redirectUri": "http://localhost:8080",
           "scope": "admin",
@@ -33,7 +41,7 @@
           "sessionId": "442fa486-9079-4f8d-9807-1a6f1383718f",
           "refreshToken": "dfc35077e98c456a9349018c3799f35e",
           "createdTime": "Feb 22, 2023, 12:18:39 PM",
-          "lastRefreshTime": "Feb 25, 2023, 11:53:50 AM",
+          "lastRefreshTime": "Feb 25, 2023, 2:44:52 PM",
           "clientId": "http://localhost:8080",
           "redirectUri": "http://localhost:8080",
           "scope": "admin",

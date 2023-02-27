@@ -107,3 +107,10 @@ services:
       - "8081:8081"
     depends_on:
       - mqtt
+   
+  smtp:
+    image: mailhog/mailhog
+    container_name: fake-smtp
+    ports:
+        - 1025:1025
+        - 8025:8025

@@ -65,12 +65,21 @@
             "type": "application/javascript"
           },
           "type": "script.ScriptAction"
+        },
+        {
+          "inputs": {},
+          "id": "4",
+          "configuration": {
+            "script": "val mailActions \u003d getActions(\"mail\",\"mail:smtp:1076346e1a\")\nmailActions.sendMail(\"paziente1@test.com\", \"Implantable Cardioverter-Defibrillator application\", \"The Implantable Cardioverter-Defibrillator application has been done.\")",
+            "type": "application/vnd.openhab.dsl.rule"
+          },
+          "type": "script.ScriptAction"
         }
       ],
       "configuration": {},
       "configDescriptions": [],
       "uid": "1a164f82b8",
-      "name": "ICD",
+      "name": "ICD_application",
       "tags": [],
       "visibility": "VISIBLE"
     }
@@ -108,12 +117,21 @@
             "type": "application/javascript"
           },
           "type": "script.ScriptAction"
+        },
+        {
+          "inputs": {},
+          "id": "2",
+          "configuration": {
+            "script": "val mailActions \u003d getActions(\"mail\",\"mail:smtp:1076346e1a\")\nmailActions.sendMail(\"paziente1@test.com\", \"Insuline injection\", \"The Insuline injection has been done.\")\n",
+            "type": "application/vnd.openhab.dsl.rule"
+          },
+          "type": "script.ScriptAction"
         }
       ],
       "configuration": {},
       "configDescriptions": [],
       "uid": "2eb266ed76",
-      "name": "InsulineInjection",
+      "name": "Insuline_Injection",
       "tags": [],
       "visibility": "VISIBLE"
     }
@@ -217,12 +235,21 @@
             "type": "application/javascript"
           },
           "type": "script.ScriptAction"
+        },
+        {
+          "inputs": {},
+          "id": "4",
+          "configuration": {
+            "script": "val mailActions \u003d getActions(\"mail\",\"mail:smtp:1076346e1a\")\nmailActions.sendMail(\"paziente1@test.com\", \"Diuretic application\", \"The Diuretic application has been done.\")",
+            "type": "application/vnd.openhab.dsl.rule"
+          },
+          "type": "script.ScriptAction"
         }
       ],
       "configuration": {},
       "configDescriptions": [],
       "uid": "4d2fc8fa11",
-      "name": "Diuretic",
+      "name": "Diuretic_application",
       "tags": [],
       "visibility": "VISIBLE"
     }
@@ -359,12 +386,21 @@
             "type": "application/javascript"
           },
           "type": "script.ScriptAction"
+        },
+        {
+          "inputs": {},
+          "id": "4",
+          "configuration": {
+            "script": "val mailActions \u003d getActions(\"mail\",\"mail:smtp:1076346e1a\")\nmailActions.sendMail(\"paziente1@test.com\", \"Paracetamol application\", \"The Paracetamol application has been done.\")",
+            "type": "application/vnd.openhab.dsl.rule"
+          },
+          "type": "script.ScriptAction"
         }
       ],
       "configuration": {},
       "configDescriptions": [],
       "uid": "cb1233a5cf",
-      "name": "Paracetamol",
+      "name": "Paracetamol_application",
       "tags": [],
       "visibility": "VISIBLE"
     }

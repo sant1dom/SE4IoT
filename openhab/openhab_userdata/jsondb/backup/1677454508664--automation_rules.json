@@ -49,6 +49,15 @@
       "actions": [
         {
           "inputs": {},
+          "id": "2",
+          "configuration": {
+            "command": "OFF",
+            "itemName": "Tachycardia"
+          },
+          "type": "core.ItemCommandAction"
+        },
+        {
+          "inputs": {},
           "id": "3",
           "configuration": {
             "blockSource": "\u003cxml xmlns\u003d\"https://developers.google.com/blockly/xml\"\u003e\u003cblock type\u003d\"oh_timer\" id\u003d\"ML`U6SQ,#MIV8SL,ub6t\" x\u003d\"16\" y\u003d\"132\"\u003e\u003cfield name\u003d\"delayUnits\"\u003eplusSeconds\u003c/field\u003e\u003cvalue name\u003d\"delay\"\u003e\u003cshadow type\u003d\"math_number\" id\u003d\"onbtrpo2!kt[/vn$N`W/\"\u003e\u003cfield name\u003d\"NUM\"\u003e10\u003c/field\u003e\u003c/shadow\u003e\u003c/value\u003e\u003cvalue name\u003d\"timerName\"\u003e\u003cshadow type\u003d\"text\" id\u003d\"yo;3qAK]7eyRbl?NH{NM\"\u003e\u003cfield name\u003d\"TEXT\"\u003eICDTimer\u003c/field\u003e\u003c/shadow\u003e\u003c/value\u003e\u003cstatement name\u003d\"timerCode\"\u003e\u003cblock type\u003d\"oh_event\" id\u003d\"k@ZXqK?UjdxlSfy22B[-\"\u003e\u003cfield name\u003d\"eventType\"\u003esendCommand\u003c/field\u003e\u003cvalue name\u003d\"value\"\u003e\u003cshadow type\u003d\"text\" id\u003d\"K!hsSg/*_QKOSc^54Gx1\"\u003e\u003cfield name\u003d\"TEXT\"\u003eOFF\u003c/field\u003e\u003c/shadow\u003e\u003c/value\u003e\u003cvalue name\u003d\"itemName\"\u003e\u003cshadow type\u003d\"oh_item\" id\u003d\"wA/BZo6F]P[8GLE*Ny3D\"\u003e\u003cfield name\u003d\"itemName\"\u003eICD\u003c/field\u003e\u003c/shadow\u003e\u003c/value\u003e\u003c/block\u003e\u003c/statement\u003e\u003c/block\u003e\u003c/xml\u003e",
@@ -59,18 +68,17 @@
         },
         {
           "inputs": {},
-          "id": "2",
+          "id": "4",
           "configuration": {
-            "command": "OFF",
-            "itemName": "Tachycardia"
+            "type": "application/vnd.openhab.dsl.rule"
           },
-          "type": "core.ItemCommandAction"
+          "type": "script.ScriptAction"
         }
       ],
       "configuration": {},
       "configDescriptions": [],
       "uid": "1a164f82b8",
-      "name": "ICD",
+      "name": "ICD_application",
       "tags": [],
       "visibility": "VISIBLE"
     }
@@ -108,12 +116,21 @@
             "type": "application/javascript"
           },
           "type": "script.ScriptAction"
+        },
+        {
+          "inputs": {},
+          "id": "2",
+          "configuration": {
+            "script": "val mailActions \u003d getActions(\"mail\",\"mail:smtp:1076346e1a\")\nmailActions.sendMail(\"paziente1@test.com\", \"Insuline injection\", \"The Insuline injection has been done.\")\n",
+            "type": "application/vnd.openhab.dsl.rule"
+          },
+          "type": "script.ScriptAction"
         }
       ],
       "configuration": {},
       "configDescriptions": [],
       "uid": "2eb266ed76",
-      "name": "InsulineInjection",
+      "name": "Insuline_Injection",
       "tags": [],
       "visibility": "VISIBLE"
     }
@@ -201,6 +218,15 @@
       "actions": [
         {
           "inputs": {},
+          "id": "2",
+          "configuration": {
+            "command": "OFF",
+            "itemName": "High_Pressure"
+          },
+          "type": "core.ItemCommandAction"
+        },
+        {
+          "inputs": {},
           "id": "3",
           "configuration": {
             "blockSource": "\u003cxml xmlns\u003d\"https://developers.google.com/blockly/xml\"\u003e\u003cblock type\u003d\"oh_timer\" id\u003d\"l7I/a6QH6\u003dM39+c(+jbU\" x\u003d\"16\" y\u003d\"132\"\u003e\u003cfield name\u003d\"delayUnits\"\u003eplusSeconds\u003c/field\u003e\u003cvalue name\u003d\"delay\"\u003e\u003cshadow type\u003d\"math_number\" id\u003d\"iYz%@m7!{cN1cr!qsesk\"\u003e\u003cfield name\u003d\"NUM\"\u003e10\u003c/field\u003e\u003c/shadow\u003e\u003c/value\u003e\u003cvalue name\u003d\"timerName\"\u003e\u003cshadow type\u003d\"text\" id\u003d\"GM4Bk[c2?{lgu`yI9lLN\"\u003e\u003cfield name\u003d\"TEXT\"\u003eDiureticTimer\u003c/field\u003e\u003c/shadow\u003e\u003c/value\u003e\u003cstatement name\u003d\"timerCode\"\u003e\u003cblock type\u003d\"oh_event\" id\u003d\"uN0Q6\u003ddg,k\u003d}!GyCq]$p\"\u003e\u003cfield name\u003d\"eventType\"\u003esendCommand\u003c/field\u003e\u003cvalue name\u003d\"value\"\u003e\u003cshadow type\u003d\"text\" id\u003d\"LCaA+sc_jndA,L4I;m4p\"\u003e\u003cfield name\u003d\"TEXT\"\u003eOFF\u003c/field\u003e\u003c/shadow\u003e\u003c/value\u003e\u003cvalue name\u003d\"itemName\"\u003e\u003cshadow type\u003d\"oh_item\" id\u003d\"7}Xy+?rs9adP)EVu\u003dlAo\"\u003e\u003cfield name\u003d\"itemName\"\u003eDiuretic\u003c/field\u003e\u003c/shadow\u003e\u003c/value\u003e\u003c/block\u003e\u003c/statement\u003e\u003c/block\u003e\u003c/xml\u003e",
@@ -211,18 +237,18 @@
         },
         {
           "inputs": {},
-          "id": "2",
+          "id": "4",
           "configuration": {
-            "command": "OFF",
-            "itemName": "High_Pressure"
+            "script": "val mailActions \u003d getActions(\"mail\",\"mail:smtp:1076346e1a\")\nmailActions.sendMail(\"paziente1@test.com\", \"Diuretic application\", \"The Diuretic application has been done.\")",
+            "type": "application/vnd.openhab.dsl.rule"
           },
-          "type": "core.ItemCommandAction"
+          "type": "script.ScriptAction"
         }
       ],
       "configuration": {},
       "configDescriptions": [],
       "uid": "4d2fc8fa11",
-      "name": "Diuretic",
+      "name": "Diuretic_application",
       "tags": [],
       "visibility": "VISIBLE"
     }
@@ -359,12 +385,21 @@
             "type": "application/javascript"
           },
           "type": "script.ScriptAction"
+        },
+        {
+          "inputs": {},
+          "id": "4",
+          "configuration": {
+            "script": "val mailActions \u003d getActions(\"mail\",\"mail:smtp:1076346e1a\")\nmailActions.sendMail(\"paziente1@test.com\", \"Paracetamol application\", \"The Paracetamol application has been done.\")",
+            "type": "application/vnd.openhab.dsl.rule"
+          },
+          "type": "script.ScriptAction"
         }
       ],
       "configuration": {},
       "configDescriptions": [],
       "uid": "cb1233a5cf",
-      "name": "Paracetamol",
+      "name": "Paracetamol_application",
       "tags": [],
       "visibility": "VISIBLE"
     }
