@@ -8,7 +8,7 @@
         "parameters": [],
         "parameterGroups": []
       },
-      "timestamp": "Feb 22, 2023, 1:15:22 PM",
+      "timestamp": "Feb 27, 2023, 6:19:48 PM",
       "component": "Sitemap",
       "config": {
         "label": "My Body Automation"
@@ -27,7 +27,7 @@
                   "config": {
                     "icon": "heart_rate.png",
                     "item": "Heart_Rate",
-                    "label": "Heart Rate [%.0f BPM]"
+                    "label": "Heart Rate [%d BPM]"
                   }
                 },
                 {
@@ -43,7 +43,7 @@
                   "config": {
                     "icon": "blood_pressure.png",
                     "item": "Dyastolic_Pressure",
-                    "label": "Dyastolic [%d mmHg]"
+                    "label": "Diastolic [%d mmHg]"
                   }
                 },
                 {
@@ -93,7 +93,7 @@
                   "config": {
                     "icon": "diabetes.png",
                     "item": "Diabete",
-                    "label": "Diabete"
+                    "label": "Diabetes"
                   }
                 },
                 {
@@ -127,7 +127,7 @@
                   "config": {
                     "icon": "tachipirina.png",
                     "item": "Tachipirina",
-                    "label": "Tachipirina"
+                    "label": "Paracetamol"
                   }
                 },
                 {

@@ -1722,7 +1722,7 @@
         "randomFirst": "1",
         "randomLast": "5",
         "randomUnits": "seconds",
-        "drop": true,
+        "drop": false,
         "allowrate": false,
         "outputs": 1,
         "x": 400,

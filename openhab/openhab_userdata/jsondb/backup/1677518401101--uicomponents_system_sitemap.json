@@ -8,7 +8,7 @@
         "parameters": [],
         "parameterGroups": []
       },
-      "timestamp": "Feb 22, 2023, 1:14:56 PM",
+      "timestamp": "Feb 27, 2023, 6:20:00 PM",
       "component": "Sitemap",
       "config": {
         "label": "My Body Automation"
@@ -18,7 +18,7 @@
           {
             "component": "Frame",
             "config": {
-              "label": "Vital Signs"
+              "label": "My Body"
             },
             "slots": {
               "widgets": [
@@ -27,7 +27,7 @@
                   "config": {
                     "icon": "heart_rate.png",
                     "item": "Heart_Rate",
-                    "label": "Heart Rate [%.0f BPM]"
+                    "label": "Heart Rate [%d BPM]"
                   }
                 },
                 {
@@ -35,7 +35,7 @@
                   "config": {
                     "icon": "blood_pressure.png",
                     "item": "Systolic_Pressure",
-                    "label": "Systolic Pressure [%d mmHg]"
+                    "label": "Systolic [%d mmHg]"
                   }
                 },
                 {
@@ -43,7 +43,7 @@
                   "config": {
                     "icon": "blood_pressure.png",
                     "item": "Dyastolic_Pressure",
-                    "label": "Diastolic Pressure [%d mmHg]"
+                    "label": "Diastolic [%d mmHg]"
                   }
                 },
                 {
@@ -59,7 +59,7 @@
                   "config": {
                     "icon": "glycemia_icon",
                     "item": "Glycemia",
-                    "label": "Blood Glucose [%.1f mmol/L]"
+                    "label": "Glycemia [%.1f mmol/L]"
                   }
                 }
               ]
@@ -68,7 +68,7 @@
           {
             "component": "Frame",
             "config": {
-              "label": "Conditions"
+              "label": "Diseases"
             },
             "slots": {
               "widgets": [
@@ -77,7 +77,7 @@
                   "config": {
                     "icon": "high_pressure.png",
                     "item": "High_Pressure",
-                    "label": "High Blood Pressure"
+                    "label": "High Pressure"
                   }
                 },
                 {
@@ -92,7 +92,7 @@
                   "component": "Switch",
                   "config": {
                     "icon": "diabetes.png",
-                    "item": "Diabetes",
+                    "item": "Diabete",
                     "label": "Diabetes"
                   }
                 },
@@ -110,7 +110,7 @@
           {
             "component": "Frame",
             "config": {
-              "label": "Interventions"
+              "label": "Precautionary Interventions"
             },
             "slots": {
               "widgets": [
@@ -127,14 +127,14 @@
                   "config": {
                     "icon": "tachipirina.png",
                     "item": "Tachipirina",
-                    "label": "Acetaminophen"
+                    "label": "Paracetamol"
                   }
                 },
                 {
                   "component": "Switch",
                   "config": {
                     "icon": "insulin.png",
-                    "item": "Insulin_Injection",
+                    "item": "InsulinaInjection",
                     "label": "Insulin Injection"
                   }
                 },
