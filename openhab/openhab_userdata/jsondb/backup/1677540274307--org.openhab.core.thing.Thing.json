@@ -6,10 +6,10 @@
       "channels": [],
       "label": "SMTP Server",
       "configuration": {
-        "hostname": "se4iot-fake-smtp-1",
+        "hostname": "fake-smtp",
         "port": "1025",
         "security": "PLAIN",
-        "sender": "medico_paziente1@test.com"
+        "sender": "medico@test.com"
       },
       "properties": {},
       "UID": "mail:smtp:1076346e1a",
@@ -25,7 +25,7 @@
       "configuration": {
         "birthRetain": true,
         "certificatepin": true,
-        "clientid": "f98cb0f6-1e70-4504-8f44-336141c7d055",
+        "clientid": "4e863f90-2ad2-4c9b-921e-4d777f46e82d",
         "enableDiscovery": true,
         "host": "mqtt",
         "hostnameValidated": true,

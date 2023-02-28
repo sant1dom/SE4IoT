@@ -22,6 +22,15 @@
             "type": "application/vnd.openhab.dsl.rule"
           },
           "type": "script.ScriptAction"
+        },
+        {
+          "inputs": {},
+          "id": "3",
+          "configuration": {
+            "script": "val mailActions \u003d getActions(\"mail\",\"mail:smtp:1076346e1a\")\nmailActions.sendMail(\"paziente1@test.com\", \"Body disease notification\", \"The system is noticing an abnormal increase in pressure.\")",
+            "type": "application/vnd.openhab.dsl.rule"
+          },
+          "type": "script.ScriptAction"
         }
       ],
       "configuration": {},
@@ -70,6 +79,7 @@
           "inputs": {},
           "id": "4",
           "configuration": {
+            "script": "val mailActions \u003d getActions(\"mail\",\"mail:smtp:1076346e1a\")\nmailActions.sendMail(\"paziente1@test.com\", \"Implantable Cardioverter-Defibrillator application\", \"The Implantable Cardioverter-Defibrillator application has been done.\")",
             "type": "application/vnd.openhab.dsl.rule"
           },
           "type": "script.ScriptAction"
@@ -78,7 +88,7 @@
       "configuration": {},
       "configDescriptions": [],
       "uid": "1a164f82b8",
-      "name": "ICD",
+      "name": "ICD_application",
       "tags": [],
       "visibility": "VISIBLE"
     }
@@ -96,7 +106,18 @@
           "type": "core.ItemCommandTrigger"
         }
       ],
-      "conditions": [],
+      "conditions": [
+        {
+          "inputs": {},
+          "id": "5",
+          "configuration": {
+            "itemName": "Diabete",
+            "operator": "\u003d",
+            "state": "ON"
+          },
+          "type": "core.ItemStateCondition"
+        }
+      ],
       "actions": [
         {
           "inputs": {},
@@ -191,6 +212,15 @@
             "type": "application/vnd.openhab.dsl.rule"
           },
           "type": "script.ScriptAction"
+        },
+        {
+          "inputs": {},
+          "id": "4",
+          "configuration": {
+            "script": "val mailActions \u003d getActions(\"mail\",\"mail:smtp:1076346e1a\")\nmailActions.sendMail(\"paziente1@test.com\", \"Body disease notification\", \"The system is noticing a sudden increase in body temperature.\")",
+            "type": "application/vnd.openhab.dsl.rule"
+          },
+          "type": "script.ScriptAction"
         }
       ],
       "configuration": {},
@@ -214,7 +244,18 @@
           "type": "core.ItemCommandTrigger"
         }
       ],
-      "conditions": [],
+      "conditions": [
+        {
+          "inputs": {},
+          "id": "5",
+          "configuration": {
+            "itemName": "High_Pressure",
+            "operator": "\u003d",
+            "state": "ON"
+          },
+          "type": "core.ItemStateCondition"
+        }
+      ],
       "actions": [
         {
           "inputs": {},
@@ -273,6 +314,15 @@
           "id": "2",
           "configuration": {
             "script": "val mqttActions \u003d getActions(\"mqtt\",\"mqtt:broker:cc36b964a4\");\nvar diseases \u003d Thing_Generica_MQTT_Diseases_channel.state.toString;\ndiseases \u003d diseases.replaceAll(\"\\\"diabetes\\\":false\", \"\\\"diabetes\\\":true\");\n\nlogWarn(\"diseases\", \"Turning on DIABETES: {}\", diseases);\nmqttActions.publishMQTT(\"diseases\",diseases, true);\n                        ",
+            "type": "application/vnd.openhab.dsl.rule"
+          },
+          "type": "script.ScriptAction"
+        },
+        {
+          "inputs": {},
+          "id": "3",
+          "configuration": {
+            "script": "val mailActions \u003d getActions(\"mail\",\"mail:smtp:1076346e1a\")\nmailActions.sendMail(\"paziente1@test.com\", \"Body disease notification\", \"The system is noticing a sudden increase in body blood sugar.\")",
             "type": "application/vnd.openhab.dsl.rule"
           },
           "type": "script.ScriptAction"
@@ -365,7 +415,18 @@
           "type": "core.ItemCommandTrigger"
         }
       ],
-      "conditions": [],
+      "conditions": [
+        {
+          "inputs": {},
+          "id": "5",
+          "configuration": {
+            "itemName": "Fever",
+            "operator": "\u003d",
+            "state": "ON"
+          },
+          "type": "core.ItemStateCondition"
+        }
+      ],
       "actions": [
         {
           "inputs": {},
@@ -424,6 +485,15 @@
           "id": "2",
           "configuration": {
             "script": "val mqttActions \u003d getActions(\"mqtt\",\"mqtt:broker:cc36b964a4\")\nvar diseases \u003d Thing_Generica_MQTT_Diseases_channel.state.toString\ndiseases \u003d diseases.replaceAll(\"\\\"tachycardia\\\":false\", \"\\\"tachycardia\\\":true\")\n\nlogWarn(\"diseases\", \"Turning on TACHYCARDIA: {}\", diseases)\nmqttActions.publishMQTT(\"diseases\",diseases, true)",
+            "type": "application/vnd.openhab.dsl.rule"
+          },
+          "type": "script.ScriptAction"
+        },
+        {
+          "inputs": {},
+          "id": "3",
+          "configuration": {
+            "script": "val mailActions \u003d getActions(\"mail\",\"mail:smtp:1076346e1a\")\nmailActions.sendMail(\"paziente1@test.com\", \"Body disease notification\", \"The system is noticing an abnormal increase in heart rate.\")",
             "type": "application/vnd.openhab.dsl.rule"
           },
           "type": "script.ScriptAction"

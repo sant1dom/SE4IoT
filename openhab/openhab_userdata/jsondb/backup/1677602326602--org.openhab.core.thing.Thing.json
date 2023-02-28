@@ -9,7 +9,7 @@
         "hostname": "fake-smtp",
         "port": "1025",
         "security": "PLAIN",
-        "sender": "medico_paziente1@test.com"
+        "sender": "medico@test.com"
       },
       "properties": {},
       "UID": "mail:smtp:1076346e1a",
@@ -25,7 +25,7 @@
       "configuration": {
         "birthRetain": true,
         "certificatepin": true,
-        "clientid": "4b7f5ecb-5182-417d-9dd5-3ae1eae076e9",
+        "clientid": "d62f8f7a-bf9a-4ee5-9b58-a253fda1ba55",
         "enableDiscovery": true,
         "host": "mqtt",
         "hostnameValidated": true,
