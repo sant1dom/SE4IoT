@@ -2,7 +2,7 @@ version: '3.3'
 services:
   telegraf:
     image: telegraf
-    container_name: telegraf-collector
+    container_name: telegraf-collectors
     restart: always
     volumes:
       - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro

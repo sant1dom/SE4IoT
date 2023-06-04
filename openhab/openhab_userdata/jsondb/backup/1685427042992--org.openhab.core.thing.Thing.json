@@ -25,7 +25,7 @@
       "configuration": {
         "birthRetain": true,
         "certificatepin": true,
-        "clientid": "4b7f5ecb-5182-417d-9dd5-3ae1eae076e9",
+        "clientid": "13694831-f1c2-4e32-9a77-fbff51ff26d0",
         "enableDiscovery": true,
         "host": "mqtt",
         "hostnameValidated": true,
